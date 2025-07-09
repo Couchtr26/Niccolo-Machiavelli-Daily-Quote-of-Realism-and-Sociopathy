@@ -802,26 +802,26 @@
     return {
       quote: niccolòMachiavelliQuote[Math.floor(Math.random() * niccolòMachiavelliQuote.length)],
       author: "Niccolò Machiavelli"
-    };
+      };
+    }
   }
-}
 
-function showQuote() {
-  const { quote, author } = getRandomQuote();
-  document.getElementById("quote").textContent = `“${quote}”`;
-  document.getElementById("author").textContent = `– ${author}`;
-}
+  function showQuote() {
+    const { quote, author } = getRandomQuote();
+    document.getElementById("quote").textContent = `“${quote}”`;
+    document.getElementById("author").textContent = `– ${author}`;
+  }
 
-function saveQuote() {
-  const quoteText = document.getElementById("quote").textContent;
-  const author = document.getElementById("author").textContent;
-  const content = `${quoteText}\n${author}`;
-  const blob = new Blob([content], { type: 'text/plain' });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "favorite_quote.txt";
-  link.click();
-}
+  function saveQuote() {
+    const quoteText = document.getElementById("quote").textContent;
+    const author = document.getElementById("author").textContent;
+    const content = `${quoteText}\n${author}`;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "favorite_quote.txt";
+    link.click();
+  }
   </script>
 
 </body>
