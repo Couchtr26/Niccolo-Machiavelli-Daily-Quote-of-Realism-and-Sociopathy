@@ -49,3 +49,4 @@ May cause you to win arguments with terrifying efficiency.
 
 👤 Created by
 Developed by Thomas Couch, powered by madness, memes, and Machiavelli.
+© 2025 Thomas Couch — Grey Knight Software
